@@ -1,0 +1,18 @@
+@mixin font($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin flex($disp: flex, $fd: row, $ai: center, $jc: center) {
+  display: $disp;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin background($bp: center, $bs: contain, $br: no-repeat) {
+  background-position: $bp;
+  background-size: $bs;
+  background-repeat: $br;
+}

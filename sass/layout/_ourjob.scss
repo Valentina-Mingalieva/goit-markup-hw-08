@@ -1,0 +1,36 @@
+.ourjob {
+  display: flex;
+  text-align: center;
+  padding-bottom: 94px;
+}
+
+.ourjob-list {
+  display: flex;
+  list-style: none;
+}
+
+.ourjob-list__item {
+  display: inline-block;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.ourjob-list__action {
+  position: relative;
+}
+
+.ourjob-list__text {
+  position: absolute;
+  @include flex;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  @include font(700, 14px, 1.14);
+  text-transform: uppercase;
+  color: var(--white-color);
+  background: rgba(47, 48, 58, 0.8);
+}

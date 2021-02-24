@@ -1,0 +1,23 @@
+.hero {
+  max-width: 1600px;
+  padding: 200px 0px;
+  margin: 0 auto;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../index-images/bcgimg.jpg);
+  @include background($bs: cover);
+}
+
+.hero__title {
+  display: flex;
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 696px;
+  @include font(900, 44px, 1.36);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
