@@ -16,10 +16,12 @@
 @import "./components/logo";
 @import "./components/section-title";
 @import "./components/social";
+@import "./components/close-btn";
 
 // LAYOUT
 
 @import "./layout/header";
+@import "./layout/mobile-menu";
 @import "./layout/hero";
 @import "./layout/backdrop";
 @import "./layout/modal";

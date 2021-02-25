@@ -30,7 +30,7 @@
   $usp-icons: "antenna", "clock", "diagram", "astronaut";
   @each $iconName in $usp-icons {
     &--#{$iconName}::before {
-      background-image: url("../index-images/icons/#{$iconName}.svg");
+      background-image: url("../images/icons/#{$iconName}.svg");
     }
   }
 }
@@ -47,16 +47,16 @@
     background-position: center;
   }
   &--antenna::before {
-    background-image: url("../index-images/icons/antenna.svg");
+    background-image: url("../images/icons/antenna.svg");
   }
   &--clock::before {
-    background-image: url("../index-images/icons/clock.svg");
+    background-image: url("../images/icons/clock.svg");
   }
   &--diagram::before {
-    background-image: url("../index-images/icons/diagram.svg");
+    background-image: url("../images/icons/diagram.svg");
   }
   &--astronaut::before {
-    background-image: url("../index-images/icons/astronaut.svg");
+    background-image: url("../images/icons/astronaut.svg");
   }
 } */
 

@@ -61,7 +61,7 @@
     visibility: visible;
   }
 }
-
+/* 
 .header-address {
   margin-left: auto;
   display: flex;
@@ -98,9 +98,20 @@
   margin-right: 10px;
   fill: currentColor;
   @extend %transition;
-
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+  .header-address {
+    display: none;
   }
 }
