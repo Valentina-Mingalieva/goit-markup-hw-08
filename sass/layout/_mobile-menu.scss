@@ -8,12 +8,12 @@
   content: "";
   width: 40px;
   height: 40px;
-  fill: black;
+  fill: currentColor;
   @extend %transition;
   cursor: pointer;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
   @media screen and (min-width: 767px) {
     display: none;
@@ -21,21 +21,23 @@
 }
 
 .mobile-menu {
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 100%;
   max-width: 480px;
   height: 100vh;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  background-color: blanchedalmond;
   padding: 48px 40px;
+  /* background-color: var(--white-color); */
+  transform: translateX(-50%) translateY(-100%);
   @extend %transition;
   @media screen and (min-width: 767px) {
     display: none;
   }
-}
-
-.mobile-menu.is-open {
-  transform: translateX(-50%) translateY(0%);
+  &.is-open {
+    transform: translateX(-50%) translateY(0%);
+  }
 }

@@ -1,23 +1,67 @@
-.hero {
+/* .hero {
   max-width: 1600px;
   padding: 200px 0px;
-  margin: 0 auto;
+  }*/
+
+.hero {
+  width: 480px;
+  height: 400px;
   background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bcgimg.jpg);
+    url(../images/m-bcgimg.jpg);
   @include background($bs: cover);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/m-bcgimg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bcgimg.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bcgimg@2x.jpg);
+  }
 }
 
 .hero__title {
   display: flex;
   text-align: center;
-  margin: 0 auto 30px;
-  width: 696px;
-  @include font(900, 44px, 1.36);
+  margin: 0 auto auto;
+  width: 360px;
+  @include font(900, 26px, 1.6);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    margin: 0 auto 30px;
+    @include font(900, 44px, 1.36);
+  }
 }

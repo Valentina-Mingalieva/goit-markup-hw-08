@@ -1,26 +1,21 @@
-/* .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  &.general {
-    @include flex($ai: baseline);
-  }
-
-  &.oneline {
-    display: flex;
-  }
-}
- */
-
 .container {
   width: 100%;
   padding: 0 15px;
-
   .header & {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &.oneline {
+    display: flex;
+    & .header-address {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  &.general {
+    @include flex($ai: baseline);
   }
 }
 
@@ -30,10 +25,9 @@
     margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 760px;
   }
 }
 

@@ -1,0 +1,21 @@
+.mobile-socials {
+  display: flex;
+}
+
+.mobile-socials__item {
+  display: block;
+  padding: 0 10px;
+  border-right: 1px solid var(--text-color);
+  &:last-child {
+    padding-right: 0;
+    border: none;
+  }
+  &:first-child {
+    padding-left: 0;
+  }
+}
+.mobile-socials__link {
+  @include font(500, 18px, 1.22);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
