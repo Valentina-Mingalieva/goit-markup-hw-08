@@ -1,11 +1,8 @@
-/* .hero {
-  max-width: 1600px;
-  padding: 200px 0px;
-  }*/
-
 .hero {
   width: 480px;
   height: 400px;
+  margin: 0 auto;
+  padding: 118px 0px;
   background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -34,7 +31,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/bcgimg.jpg);
+      url(../images/p-bcgimg.jpg);
   }
 }
 
@@ -46,14 +43,39 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/bcgimg@2x.jpg);
+      url(../images/p-bcgimg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1200px;
+    height: 600px;
+    padding: 200px 0px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/d-bcgimg.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/d-bcgimg@2x.jpg);
   }
 }
 
 .hero__title {
   display: flex;
   text-align: center;
-  margin: 0 auto auto;
+  margin: 0 auto 30px;
   width: 360px;
   @include font(900, 26px, 1.6);
   letter-spacing: 0.06em;
