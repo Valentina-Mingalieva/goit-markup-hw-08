@@ -16,8 +16,8 @@
   }
   &.general {
     @include flex($fd: column, $ai: baseline);
-    @media screen and (min-widht: 1200px) {
-      flex-direction: row;
+    @media screen and (min-width: 1200px) {
+      @include flex($ai: center);
     }
   }
 }

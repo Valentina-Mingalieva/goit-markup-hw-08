@@ -13,7 +13,8 @@ address {
 .footer-one {
   @include flex($fd: column);
   margin-bottom: 60px;
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 1200px) {
+    @include flex($fd: column, $ai: flex-start);
     margin-right: 70px;
     margin-bottom: 0;
   }
@@ -21,6 +22,9 @@ address {
 
 .footer-address {
   @include flex($fd: column);
+  @media screen and (min-width: 1200px) {
+    @include flex($fd: column, $ai: flex-start);
+  }
 }
 
 .footer-address__item {
@@ -61,11 +65,9 @@ address {
 }
 
 .footer-one-and-two {
-  display: flex;
-  flex-direction: column;
+  @include flex($fd: column);
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex($ai: baseline, $jc: space-around);
   }
 }
 
@@ -78,7 +80,10 @@ address {
 }
 
 .subscribe {
-  @include flex($fd: column);
+  @include flex($fd: column, $ai: center);
+  @media screen and (min-width: 1200px) {
+    @include flex($fd: column, $ai: flex-start);
+  }
 }
 
 .subscribe__container {
@@ -106,5 +111,6 @@ address {
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    width: 358px;
   }
 }
