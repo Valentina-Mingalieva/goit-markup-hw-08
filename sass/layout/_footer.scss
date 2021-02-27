@@ -11,24 +11,28 @@ address {
 /* footer-one container */
 
 .footer-one {
-  display: inline-block;
-  margin-right: 70px;
+  @include flex($fd: column);
+  margin-bottom: 60px;
+  @media screen and (min-widht: 768px) {
+    margin-right: auto;
+  }
+  @media screen and (min-widht: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-address {
-  @include flex($fd: column, $ai: flex-start);
+  @include flex($fd: column);
 }
 
 .footer-address__item {
   display: inline-block;
   @include font(400, 14px, 1.7);
   color: var(--white-color);
-
   &--contact-link {
-    margin-top: 9px;
+    margin-top: 8px;
     opacity: 0.6;
     @extend %transition;
-
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -38,31 +42,45 @@ address {
 
 /* footer-two container*/
 
+.footer-two {
+  display: block;
+  margin-bottom: 60px;
+}
+
 .footer-title {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
   @include font(700, 14px, 1.14);
   text-transform: uppercase;
   color: var(--white-color);
 }
 
-/* footer-three container*/
-
-.footer-three {
-  margin-left: auto;
-}
-
-.subscribe {
+.footer-one-and-two {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+}
+
+/* footer-three container*/
+
+/* .footer-three {
+  margin-left: auto;
+} */
+
+.subscribe {
+  @include flex($fd: column);
 }
 
 .subscribe__container {
-  @include flex;
+  @include flex($fd: column);
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   @include font(400, 16px, 1.25);
   color: rgba(255, 255, 255, 0.6);
@@ -71,7 +89,7 @@ address {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
-
+  margin-bottom: 20px;
   &:focus,
   &:hover {
     border-color: var(--accent-color);
