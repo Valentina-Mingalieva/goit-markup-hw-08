@@ -1,0 +1,13 @@
+.section {
+  padding: 60px 0;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+  &.team {
+    background: #f5f4fa;
+  }
+  &.usp {
+    justify-content: flex-start;
+  }
+}

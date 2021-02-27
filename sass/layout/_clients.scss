@@ -1,21 +1,32 @@
-.clients {
-  padding: 94px 0;
-  text-align: center;
-}
-
 .clients-list {
-  display: flex;
-  list-style: none;
+  display: inline-flex;
 }
 
 .clients-list__item {
-  display: block;
+  display: inline-block;
   margin-right: 30px;
-  width: 170px;
+  width: 210px;
   height: 90px;
-
-  &:last-child {
+  &:nth-child(2n) {
     margin-right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -28,7 +39,6 @@
   border-color: #afb1b8;
   fill: #afb1b8;
   @extend %transition;
-
   &:hover,
   &:focus {
     border-color: var(--accent-color);

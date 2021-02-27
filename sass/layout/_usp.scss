@@ -1,10 +1,3 @@
-.usp {
-  padding: 60px 0;
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-  }
-}
-
 .usp-list {
   display: inline-flex;
   flex-direction: column;
@@ -56,6 +49,9 @@
     width: 270px;
     margin-bottom: 0;
     margin-right: 30px;
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -75,7 +71,7 @@
 }
 
 .usp-list__description {
-  display: inline-block;
+  display: flex;
   @include font(400, 14px, 1.7);
   color: var(--text-color);
 }
