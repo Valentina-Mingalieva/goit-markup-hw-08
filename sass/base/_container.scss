@@ -15,10 +15,10 @@
     }
   }
   &.general {
-    @include flex($ai: baseline);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($fd: column, $ai: baseline);
+    @media screen and (min-widht: 1200px) {
+      flex-direction: row;
+    }
   }
 }
 

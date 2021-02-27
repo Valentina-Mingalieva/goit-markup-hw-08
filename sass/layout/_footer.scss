@@ -13,11 +13,9 @@ address {
 .footer-one {
   @include flex($fd: column);
   margin-bottom: 60px;
-  @media screen and (min-widht: 768px) {
-    margin-right: auto;
-  }
   @media screen and (min-widht: 1200px) {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -45,6 +43,9 @@ address {
 .footer-two {
   display: block;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-title {
@@ -54,6 +55,9 @@ address {
   @include font(700, 14px, 1.14);
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 }
 
 .footer-one-and-two {
@@ -61,15 +65,17 @@ address {
   flex-direction: column;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-around;
   }
 }
 
 /* footer-three container*/
 
-/* .footer-three {
-  margin-left: auto;
-} */
+.footer-three {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
 
 .subscribe {
   @include flex($fd: column);
@@ -77,6 +83,9 @@ address {
 
 .subscribe__container {
   @include flex($fd: column);
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .subscribe__input {
@@ -94,5 +103,8 @@ address {
   &:hover {
     border-color: var(--accent-color);
     outline: none;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
