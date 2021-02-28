@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.main-button, .social__link, .close__sign, .nav-links__link, .nav-links__link::after, .header-address__icon, .burger-button__icon, .mobile-menu, .backdrop, .modal, .form__input, .form__icon, .checkbox__icon, .clients-list__link, .sort-button, .projects__link, .jump__text, .footer-address__item--contact-link {
+.main-button, .social__link, .close, .nav-links__link, .nav-links__link::after, .header-address__icon, .burger-button__icon, .mobile-menu, .backdrop, .modal, .form__input, .form__icon, .checkbox__icon, .clients-list__link, .sort-button, .projects__link, .jump__text, .footer-address__item--contact-link {
   transition: all var(--time) var(--delay);
 }
 
@@ -186,7 +186,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo--header {
-    margin-right: 88px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -289,6 +288,7 @@ img {
   position: absolute;
   background: var(--white-color);
   cursor: pointer;
+  fill: currentColor;
 }
 
 .modal .close {
@@ -308,13 +308,12 @@ img {
   border: none;
 }
 
-.close__sign {
-  content: "";
-  fill: currentColor;
+.close:focus, .close:hover {
+  fill: var(--accent-color);
 }
 
-.close__sign:focus, .close__sign:hover {
-  fill: var(--accent-color);
+.close__sign {
+  content: "";
 }
 
 .close__sign--modal {
@@ -381,7 +380,7 @@ img {
     flex-direction: row;
     align-items: center;
     margin-bottom: 0;
-    margin-right: 84px;
+    margin-left: 88px;
   }
 }
 
@@ -560,14 +559,30 @@ img {
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
-  /*   &--envelope {
-    width: 14px;
-    height: 10px;
+}
+
+.header-address__icon--envelope {
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-address__icon--envelope {
+    width: 16px;
+    height: 12px;
   }
-  &--smartphone {
+}
+
+.header-address__icon--smartphone {
+  width: 10px;
+  height: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-address__icon--smartphone {
     width: 10px;
-    height: 14px;
-  } */
+    height: 16px;
+  }
 }
 
 .header-address__icon:hover, .header-address__icon:focus {
@@ -608,6 +623,7 @@ img {
   display: flex;
   flex-direction: column;
   position: absolute;
+  z-index: 999;
   width: 100%;
   max-width: 480px;
   height: 100vh;
@@ -861,7 +877,7 @@ textarea {
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.166;
   color: var(--text-color);
 }
 

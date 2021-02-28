@@ -7,7 +7,6 @@
     padding-top: 16px;
     padding-bottom: 16px;
     @media screen and (min-width: 768px) {
-      margin-right: 88px;
       padding-top: 24px;
       padding-bottom: 25px;
     }
@@ -16,15 +15,12 @@
       @include font(700, 26px, 1.19);
     }
   }
-
   &--footer {
     margin-bottom: 20px;
   }
-
   &--above {
     color: var(--h-color);
   }
-
   &--below {
     color: var(--white-color);
   }

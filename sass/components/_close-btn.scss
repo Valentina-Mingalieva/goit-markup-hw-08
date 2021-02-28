@@ -2,6 +2,8 @@
   position: absolute;
   background: var(--white-color);
   cursor: pointer;
+  @extend %transition;
+  fill: currentColor;
   .modal & {
     width: 30px;
     height: 30px;
@@ -17,16 +19,14 @@
     height: 40px;
     border: none;
   }
-}
-
-.close__sign {
-  content: "";
-  @extend %transition;
-  fill: currentColor;
   &:focus,
   &:hover {
     fill: var(--accent-color);
   }
+}
+
+.close__sign {
+  content: "";
   &--modal {
     height: 11px;
     width: 11px;

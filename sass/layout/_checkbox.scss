@@ -2,7 +2,7 @@
   @include flex;
   margin-top: 10px;
   margin-bottom: 30px;
-  @include font(400, 12px, 1.17);
+  @include font(400, 12px, 1.166);
   color: var(--text-color);
   @media screen and (min-width: 1200px) {
     @include font(400, 14px, 1.7);
@@ -23,12 +23,10 @@
   cursor: pointer;
   fill: var(--white-color);
   @extend %transition;
-
   .checkbox:hover + &,
   .checkbox:focus + & {
     border-color: var(--accent-color);
   }
-
   .checkbox:checked + & {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
