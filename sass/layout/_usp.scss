@@ -1,9 +1,6 @@
 .usp-list__item {
   margin: 0 15px 30px 15px;
   width: inherit;
-  &:last-child {
-    margin-bottom: 0;
-  }
   &::before {
     content: "";
     display: block;
@@ -24,16 +21,12 @@
 @media screen and (min-width: 768px) {
   .usp-list__item {
     width: calc((100% - 60px) / 2);
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .usp-list__item {
     width: calc((100% - 120px) / 4);
-    margin-bottom: 0;
   }
 }
 

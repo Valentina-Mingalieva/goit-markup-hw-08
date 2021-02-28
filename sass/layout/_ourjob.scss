@@ -2,23 +2,14 @@
   display: flex;
   text-align: center;
   padding-bottom: 94px;
-  @media screen and (max-width: 1159px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
-.ourjob-list {
-  display: flex;
-  list-style: none;
-}
-
 .ourjob-list__item {
   display: inline-block;
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
+  margin: 0 15px 30px 15px;
 }
 
 .ourjob-list__action {
