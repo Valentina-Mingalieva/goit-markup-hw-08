@@ -1,16 +1,11 @@
 .members {
   display: flex;
-  flex-direction: column;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
+  flex-wrap: wrap;
 }
 
 .member-card {
-  display: inline-flex;
   margin-bottom: 30px;
   width: 450px;
-  height: 622px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
@@ -19,31 +14,20 @@
     margin-bottom: 0px;
   }
   @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 536px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
+    width: calc((100% - 60px) / 2);
+    margin: 0 15px 30px 15px;
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 428px;
+    width: calc((100% - 120px) / 4);
     margin-bottom: 0;
-    &:nth-child(2n) {
-      margin-right: 30px;
-    }
-    &:last-child {
-      margin-right: 0px;
-    }
   }
 }
 
 .member-card__text {
+  @include flex($fd: column);
   padding: 30px;
 }
 
@@ -55,7 +39,7 @@
 }
 
 .member-card__job {
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
   @include font(400, 16px, 1.19);
   color: var(--text-color);

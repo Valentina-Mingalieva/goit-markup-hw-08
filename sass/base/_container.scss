@@ -1,6 +1,8 @@
 .container {
   width: 100%;
   padding: 0 15px;
+  margin-right: -15px;
+  margin-left: -15px;
   .header & {
     display: flex;
     justify-content: space-between;
@@ -15,9 +17,9 @@
     }
   }
   &.general {
-    @include flex($fd: column, $ai: baseline);
+    @include flex($fd: column);
     @media screen and (min-width: 1200px) {
-      @include flex($ai: center);
+      @include flex($ai: baseline);
     }
   }
 }

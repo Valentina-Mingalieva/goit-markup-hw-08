@@ -13,6 +13,9 @@ address {
 .footer-one {
   @include flex($fd: column);
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
   @media screen and (min-width: 1200px) {
     @include flex($fd: column, $ai: flex-start);
     margin-right: 70px;
@@ -42,6 +45,13 @@ address {
   }
 }
 
+.footer-one-and-two {
+  @include flex($fd: column);
+  @media screen and (min-width: 768px) {
+    @include flex($ai: baseline);
+  }
+}
+
 /* footer-two container*/
 
 .footer-two {
@@ -61,13 +71,6 @@ address {
   color: var(--white-color);
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
-  }
-}
-
-.footer-one-and-two {
-  @include flex($fd: column);
-  @media screen and (min-width: 768px) {
-    @include flex($ai: baseline, $jc: space-around);
   }
 }
 

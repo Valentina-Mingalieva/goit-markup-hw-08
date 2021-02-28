@@ -21,7 +21,6 @@
 }
 
 .mobile-menu {
-  background-color: rosybrown;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -31,7 +30,7 @@
   top: 0;
   left: 50%;
   padding: 48px 40px;
-  /* background-color: var(--white-color); */
+  background-color: var(--white-color);
   transform: translateX(-50%) translateY(-100%);
   @extend %transition;
   @media screen and (min-width: 767px) {

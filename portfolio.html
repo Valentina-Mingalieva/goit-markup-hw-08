@@ -30,6 +30,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger-button" type="button" data-menu-button>
+                <svg class="burger-button__icon">
+                    <use href="./images/icons/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
             <ul class="header-address">
                 <li class="header-address__item">
                     <a class="header-address__link" href="mailto:info@devstudio.com">
@@ -46,6 +51,46 @@
                             </use>
                         </svg>+38 096 111 11 11
                     </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="close" data-menu-close>
+                <svg class="close__sign close__sign--mobile">
+                    <use href="./images/icons/sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li class="nav-links__item">
+                    <a href="./index.html" class="nav-links__link">Студия</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="./portfolio.html" class="nav-links__link">Портфолио</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="#" class="nav-links__link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="header-address">
+                <li class="header-address__item">
+                    <a class="header-address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="header-address__item">
+                    <a class="header-address__link--phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="mobile-socials">
+                <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="mailto:info@devstudio.com">Instagram</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="tel:+380961111111">Twitter</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="tel:+380961111111">Facebook</a>
+                </li>
+                <li class="mobile-socials__item">
+                    <a class="mobile-socials__link" href="tel:+380961111111">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -286,6 +331,7 @@
         </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
