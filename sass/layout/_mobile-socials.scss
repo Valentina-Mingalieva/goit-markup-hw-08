@@ -15,7 +15,10 @@
   }
 }
 .mobile-socials__link {
-  @include font(500, 18px, 1.22);
+  @include font(500, 12px, 1.22);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  @media screen and (min-width: 480px) {
+    @include font(500, 18px, 1.22);
+  }
 }

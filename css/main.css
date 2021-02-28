@@ -519,8 +519,8 @@ img {
 
 .header-address__link {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.176;
+  font-size: 24px;
+  line-height: 1.166;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
@@ -530,6 +530,14 @@ img {
   font-size: 24px;
   line-height: 1.166;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .header-address__link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -666,14 +674,22 @@ img {
 
 .mobile-socials__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-socials__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
 .hero {
-  /* width: 480px; */
+  max-width: 1600px;
   height: 400px;
   margin: 0 auto;
   padding: 118px 0px;
@@ -743,6 +759,7 @@ img {
 
 .backdrop {
   position: fixed;
+  padding: 15px;
   top: 0;
   left: 0;
   width: 100%;
@@ -763,7 +780,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -799,6 +816,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1181,30 +1199,21 @@ textarea {
 }
 
 .projects__item {
+  display: block;
   width: 450px;
   margin: 0 15px 30px 15px;
-}
-
-.projects__item:last-child {
-  margin-bottom: 0;
+  border: 1px solid #eeeeee;
 }
 
 @media screen and (min-width: 768px) {
   .projects__item {
     width: calc((100% - 60px) / 2);
   }
-  .projects__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .projects__item {
     width: calc((100% - 90px) / 3);
-    margin-bottom: 30px;
-  }
-  .projects__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
   }
 }
 
@@ -1218,7 +1227,6 @@ textarea {
 }
 
 .projects__text {
-  border: 1px solid #eeeeee;
   border-top: 0;
   padding: 20px 24px;
 }
@@ -1274,6 +1282,14 @@ address {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* footer-one container */
@@ -1381,8 +1397,10 @@ address {
 }
 
 /* footer-three container*/
-.footer-three {
-  width: 100%;
+@media screen and (max-width: 480px) {
+  .footer-three {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1422,7 +1440,7 @@ address {
 }
 
 .subscribe__input {
-  min-width: 100%;
+  width: 100%;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
