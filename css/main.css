@@ -626,10 +626,10 @@ img {
   position: fixed;
   z-index: 999;
   width: 100%;
-  max-width: 480px;
-  height: 100vh;
+  bottom: 0;
   top: 0;
-  left: 50%;
+  left: 0;
+  right: 0;
   padding: 48px 40px;
   background-color: var(--white-color);
   transform: translateX(-50%) translateY(-100%);
@@ -642,7 +642,7 @@ img {
 }
 
 .mobile-menu.is-open {
-  transform: translateX(-50%) translateY(0%);
+  transform: translateX(0%) translateY(0%);
 }
 
 .mobile-socials {
@@ -722,7 +722,7 @@ img {
   display: flex;
   text-align: center;
   margin: 0 auto 30px;
-  width: 360px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
@@ -1381,6 +1381,10 @@ address {
 }
 
 /* footer-three container*/
+.footer-three {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-three {
     margin-left: auto;
@@ -1404,6 +1408,7 @@ address {
 }
 
 .subscribe__container {
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1417,7 +1422,7 @@ address {
 }
 
 .subscribe__input {
-  width: 450px;
+  min-width: 100%;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -1434,6 +1439,12 @@ address {
 .subscribe__input:focus, .subscribe__input:hover {
   border-color: var(--accent-color);
   outline: none;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
