@@ -1,10 +1,5 @@
-.usp-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .usp-list__item {
-  margin-bottom: 30px;
+  margin: 0 15px 30px 15px;
   width: inherit;
   &:last-child {
     margin-bottom: 0;
@@ -29,7 +24,6 @@
 @media screen and (min-width: 768px) {
   .usp-list__item {
     width: calc((100% - 60px) / 2);
-    margin: 0 15px 30px 15px;
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }

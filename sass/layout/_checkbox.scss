@@ -2,7 +2,7 @@
   @include flex;
   margin-top: 10px;
   margin-bottom: 30px;
-  @include font(400, 12px, 1.7);
+  @include font(400, 12px, 1.17);
   color: var(--text-color);
   @media screen and (min-width: 1200px) {
     @include font(400, 14px, 1.7);

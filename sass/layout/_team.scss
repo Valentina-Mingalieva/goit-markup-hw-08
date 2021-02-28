@@ -1,10 +1,5 @@
-.members {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .member-card {
-  margin-bottom: 30px;
+  margin: 0 15px 30px 15px;
   width: 450px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -15,7 +10,6 @@
   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
-    margin: 0 15px 30px 15px;
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }

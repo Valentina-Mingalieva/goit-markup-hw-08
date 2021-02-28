@@ -1,22 +1,27 @@
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-/* buttons */
-
 .buttons-list {
-  list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-list__item {
   margin-right: 8px;
-
+  margin-bottom: 15px;
   &:last-child {
     margin-right: 0;
+  }
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -31,7 +36,6 @@
   box-shadow: none;
   cursor: pointer;
   @extend %transition;
-
   &:hover,
   &:focus {
     color: var(--white-color);
