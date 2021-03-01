@@ -1,5 +1,5 @@
 .usp-list__item {
-  margin: 0 15px 30px 15px;
+  margin-bottom: 30px;
   width: inherit;
   &::before {
     content: "";
@@ -20,6 +20,7 @@
 
 @media screen and (min-width: 768px) {
   .usp-list__item {
+    margin: 0 15px 30px 15px;
     width: calc((100% - 60px) / 2);
   }
 }
