@@ -105,60 +105,6 @@
             </div>
         </section>
 
-        <!-- modal window -->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="close" data-modal-close>
-                    <svg class="close__sign close__sign--modal">
-                        <use href="./images/icons/sprite.svg#icon-Vector">
-                        </use>
-                    </svg>
-                </button>
-
-                <!-- order-form -->
-                <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
-                <form action="#" class="form">
-
-                    <label class="form__label">Имя
-                        <input name="user-name" class="form__input" type="text" placeholder=" " required>
-                        <svg class="form__icon">
-                            <use href="./images/icons/sprite.svg#icon-personform"></use>
-                        </svg>
-                    </label>
-
-                    <label class="form__label">Телефон
-                        <input name="user-phone" class="form__input" type="number" placeholder=" " required>
-                        <svg class="form__icon">
-                            <use href="./images/icons/sprite.svg#icon-phoneform"></use>
-                        </svg>
-                    </label>
-
-                    <label class="form__label">Почта
-                        <input name="user-email" class="form__input" type="email" placeholder=" " required>
-                        <svg class="form__icon">
-                            <use href="./images/icons/sprite.svg#icon-emailform"></use>
-                        </svg>
-                    </label>
-
-                    <span class="form__label">Комментарий
-                        <textarea class="form__input form__input--comment" name="user-comment" placeholder="Введите текст"></textarea>
-                    </span>
-
-                    <label class="form__field">
-                        <input class="checkbox visually-hidden" name="accept" type="checkbox">
-                        <svg class="checkbox__icon">
-                            <use href="./images/icons/sprite.svg#icon-tick">
-                            </use>
-                        </svg>
-                        Соглашаюсь с рассылкой и принимаю &nbsp;<a class="checkbox__link" href="#">Условия договора</a>
-                    </label>
-
-                    <button class="main-button" type="submit">Отправить</button>
-
-                </form>
-            </div>
-        </div>
-
         <!-- usp -->
         <section class="section usp">
             <div class="container">
@@ -561,6 +507,61 @@
             </div>
         </div>
     </footer>
+
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close" data-modal-close>
+                <svg class="close__sign close__sign--modal">
+                    <use href="./images/icons/sprite.svg#icon-Vector">
+                    </use>
+                </svg>
+            </button>
+    
+            <!-- order-form -->
+            <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form action="#" class="form">
+    
+                <label class="form__label">Имя
+                    <input name="user-name" class="form__input" type="text" placeholder=" " required>
+                    <svg class="form__icon">
+                        <use href="./images/icons/sprite.svg#icon-personform"></use>
+                    </svg>
+                </label>
+    
+                <label class="form__label">Телефон
+                    <input name="user-phone" class="form__input" type="number" placeholder=" " required>
+                    <svg class="form__icon">
+                        <use href="./images/icons/sprite.svg#icon-phoneform"></use>
+                    </svg>
+                </label>
+    
+                <label class="form__label">Почта
+                    <input name="user-email" class="form__input" type="email" placeholder=" " required>
+                    <svg class="form__icon">
+                        <use href="./images/icons/sprite.svg#icon-emailform"></use>
+                    </svg>
+                </label>
+    
+                <span class="form__label">Комментарий
+                    <textarea class="form__input form__input--comment" name="user-comment"
+                        placeholder="Введите текст"></textarea>
+                </span>
+    
+                <label class="form__field">
+                    <input class="checkbox visually-hidden" name="accept" type="checkbox">
+                    <svg class="checkbox__icon">
+                        <use href="./images/icons/sprite.svg#icon-tick">
+                        </use>
+                    </svg>
+                    Соглашаюсь с рассылкой и принимаю &nbsp;<a class="checkbox__link" href="#">Условия договора</a>
+                </label>
+    
+                <button class="main-button" type="submit">Отправить</button>
+    
+            </form>
+        </div>
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
